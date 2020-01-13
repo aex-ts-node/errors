@@ -4,12 +4,48 @@
 
 # @aex/errors
 
+## Define Errors
+
+```
+./errors/
+├── Password.ts
+└── User.ts
+```
+
+### Error Definition:
+
+> Refer to [Errorable](https://github.com/calidion/errorable) for detailed usage.
+
+```ts
+// User.ts
+export = {
+  Not: {
+    Found: {
+      messages: {
+        "en-US": "User Not Found!",
+        "zh-CN": "用户没有找到！"
+      }
+    }
+  },
+  Exists: {
+    messages: {
+      "en-US": "User Exists!",
+      "zh-CN": "用户已经存在！"
+    }
+  }
+};
+```
+
+## Usage
+
 ```ts
 import { AexErrors } from "@aex/errors";
 import { Aex } from "@aex/core";
 import * as path from "path";
 
 const aex = new Aex();
+
+// Absolute path is encouraged.
 const dirName = path.resolve(__dirname, "./errors");
 const middleware = AexErrors(dirName, false);
 aex.use(middleware);
