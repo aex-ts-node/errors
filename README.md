@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/aex-ts-node/errors?branch=master)](https://travis-ci.org/aex-ts-node/errors.svg?branch=master)
+[![Build Status](https://api.travis-ci.org/aex-ts-node/errors.svg?branch=master)](https://travis-ci.org/aex-ts-node/errors.svg?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/aex-ts-node/errors/badge.svg?branch=master)](https://coveralls.io/github/aex-ts-node/errors?branch=master)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
